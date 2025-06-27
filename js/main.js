@@ -2,7 +2,7 @@ class Player {
   constructor() {
     this.width = 30;
     this.height = 10;
-    this.positionX = 35;
+    this.positionX = 50 - this.width / 2;
     this.positionY = 0;
 
     //Starting CSS positions and assignment relying on class values (not in the css file)
