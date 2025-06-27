@@ -12,9 +12,9 @@ body {
 
 #player {
   background: orange;
-  width: 30vw;
-  height: 10vh;
   position: absolute;
+  /*width: 30vw;
+  height: 10vh;
   bottom: 0;
-  left: 0;
+  left: 0; ALL THIS GIVEN IN main.js*/
 }
