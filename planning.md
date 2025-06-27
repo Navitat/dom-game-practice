@@ -1,4 +1,4 @@
-## Planning
+# Planning
 
 1. Milestone 1: user can move the player left/right
 
