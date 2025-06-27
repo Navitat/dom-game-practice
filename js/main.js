@@ -65,9 +65,9 @@ class Obstacle {
 
   moveDown() {
     this.positionY--;
-    if (this.positionY < 0) {
-      this.obstacleElm.remove();
-    }
+    // if (this.positionY < 0) {
+    //   this.obstacleElm.remove();
+    // }
     this.updateUI();
   }
 }
@@ -98,7 +98,7 @@ setInterval(() => {
       player.positionY + player.height > obstacleInstance.positionY
     ) {
       console.log("gameover!");
-      //obstacleInstance.obstacleElm.remove();
+      //obstacleInstance.obstacleElm.remove(); NEEDS TO REMOVE ALSO FROM ARRAY
       location.href = "./gameover.html";
     }
   });

@@ -24,6 +24,9 @@
   - [x] create interval to move obstacle down
 
 3. Milestone 3: detect if there is collision
+
+- [x] collision detection
+
 4. Milestone 4: make the game more interesting & fix bugs
 
 - colors
