@@ -1,3 +1,20 @@
 body {
   background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#player {
+  background: orange;
+  width: 30vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
