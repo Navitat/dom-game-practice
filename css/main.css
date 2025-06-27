@@ -16,5 +16,12 @@ body {
   /*width: 30vw;
   height: 10vh;
   bottom: 0;
-  left: 0; ALL THIS GIVEN IN main.js*/
+  left: 0; ALL THIS GIVEN IN main.js player class*/
+}
+
+.obstacle {
+  background-color: red;
+  position: absolute;
+  /*width: 20vw;
+  height: 10vh; GIVEN IN main.js obstacle class*/
 }
