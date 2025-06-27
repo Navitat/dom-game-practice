@@ -37,7 +37,7 @@ class Obstacle {
   constructor() {
     this.width = 20;
     this.height = 10;
-    this.positionX = 30;
+    this.positionX = Math.floor(Math.random() * (100 - this.width + 1)); //generate rand between 0 and (100 - width)
     this.positionY = 100; //vh
     this.obstacleElm = null;
 
@@ -63,12 +63,16 @@ class Obstacle {
     this.obstacleElm.style.height = this.height + "vh";
   }
 
-  moveDown() {
+  moveDown(min, max) {
     this.positionY--;
     // if (this.positionY < 0) {
     //   this.obstacleElm.remove();
     // }
     this.updateUI();
+  }
+
+  getRandom() {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 }
 
@@ -82,7 +86,7 @@ const obstaclesArr = []; // stores instances of the class Obstacle
 setInterval(() => {
   const newObstacle = new Obstacle();
   obstaclesArr.push(newObstacle);
-}, 3_000);
+}, 4_000);
 
 //move obstacles
 setInterval(() => {
