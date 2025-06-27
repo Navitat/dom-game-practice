@@ -2,10 +2,14 @@ class Player {
   constructor() {
     this.width = 30;
     this.height = 10;
-    this.positionX = 40;
+    this.positionX = 35;
     this.positionY = 0;
 
     //Starting CSS positions and assignment relying on class values (not in the css file)
+    this.updateUI();
+  }
+
+  updateUI() {
     const playerElm = document.getElementById("player");
     playerElm.style.left = this.positionX + "vw";
     playerElm.style.bottom = this.positionY + "vh";
@@ -15,15 +19,11 @@ class Player {
 
   moveLeft() {
     this.positionX--; // this takes care of moving left
-
-    const playerElm = document.getElementById("player");
-    playerElm.style.left = this.positionX + "vw"; // remember to update the UI
+    this.updateUI();
   }
   moveRight() {
     this.positionX++; // this takes care of moving left
-
-    const playerElm = document.getElementById("player");
-    playerElm.style.left = this.positionX + "vw"; // remember to update the UI
+    this.updateUI();
   }
 }
 

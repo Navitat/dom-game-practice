@@ -10,7 +10,7 @@
   - positionY
   - moveLeft()
   - moveRight()
-- [ ] add event listeners
+- [x] add event listeners
 
 2. Milestone 2: obstacles appearing in the UI + obstacle move
 3. Milestone 3: detect if thereis collision
