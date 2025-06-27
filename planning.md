@@ -15,15 +15,15 @@
 2. Milestone 2: obstacles appearing in the UI + obstacle move
 
 - One obstacle:
-  - [ ] create obstacle class (js class)
+  - [x] create obstacle class (js class)
     - positionX
     - positionY
     - width
     - height
     - moveDown()
-  - [ ] create interval to move obstacle down
+  - [x] create interval to move obstacle down
 
-3. Milestone 3: detect if thereis collision
+3. Milestone 3: detect if there is collision
 4. Milestone 4: make the game more interesting & fix bugs
 
 - colors

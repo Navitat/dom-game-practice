@@ -87,7 +87,20 @@ setInterval(() => {
 //move obstacles
 setInterval(() => {
   obstaclesArr.forEach((obstacleInstance) => {
+    // move obstacle
     obstacleInstance.moveDown();
+
+    // detect collition (2d collision formula - mdn)
+    if (
+      player.positionX < obstacleInstance.positionX + obstacleInstance.width &&
+      player.positionX + player.width > obstacleInstance.positionX &&
+      player.positionY < obstacleInstance.positionY + obstacleInstance.height &&
+      player.positionY + player.height > obstacleInstance.positionY
+    ) {
+      console.log("gameover!");
+      //obstacleInstance.obstacleElm.remove();
+      location.href = "./gameover.html";
+    }
   });
 }, 4_0);
 

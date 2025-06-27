@@ -25,3 +25,7 @@ body {
   /*width: 20vw;
   height: 10vh; GIVEN IN main.js obstacle class*/
 }
+
+#page-gameover {
+  text-align: center;
+}
